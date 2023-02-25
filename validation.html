@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title></title>
+<script>
+function validateForm() {
+var x = document.forms["myForm"]["fname"].value;
+var y = document.forms["myForm"]["age"].value;
+var z = document.forms["myForm"]["phno"].value;
+var p = document.forms["myForm"]["pwd"].value;
+var e = document.forms["myForm"]["mail"].value
+var d = document.forms["myForm"]["dob"].value;
+var g = document.forms["myForm"]["gender"].value;
+var ed = document.forms["myForm"]["edu"].value;
+var dp = document.forms["myForm"]["dept"].value;
+var cn = document.forms["myForm"]["country"].value;
+var r = document.forms["myForm"]["rate"].value;
+var c = document.getElementById("myCheck");
+if (x == ""&&y == ""&&z == ""&&p == ""&&e == ""&&d == ""&&g == ""&&ed == ""&&dp == ""&&cn == ""&&r == "") {
+alert("Enter all Details");
+return false;
+}
+else if (x == "") {
+alert("name not entered");
+return false;
+}
+else if (y == "") {
+alert("age not entered");
+return false;
+}
+else if (z == "") {
+alert("phone number must filled out");
+return false;
+}
+else if (p == "") {
+alert("password is empty");
+return false;
+}
+else if (g == ""){
+alert("Enter gender");
+return false;
+}
+else if (d == ""){
+alert("Enter Date");
+return false;
+} 
+else if(e == ""){
+alert("Enter mail Id");
+return false;
+}
+else if (ed == ""){
+alert("Please enter your educational qualification");
+return false;
+}
+else if (dp == ""){
+alert("Please enter your department");
+return false;
+}
+else if (cn == ""){
+alert("color is not entered");
+return false;
+}
+else if (r == ""){
+alert("Please rate the page");
+return false;
+}
+if (c.checked == false) {
+alert("tnc not checked");
+return false;
+}
+}
+</script>
+<style>
+input[type=text], select {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+input[type=number], select {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+input[type=tel], select {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+input[type=password], select {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+input[type=email], select {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+input[type=date], select {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+input[type=submit] {
+width: 50%;
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+input[type=submit]:hover {
+background-color: #45a049;
+}
+input[type=reset] {
+width: 50%;
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+input[type=reset]:hover {
+background-color: #45a049;
+}
+div {
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 20px;
+}
+</style>
+</head>
+<body>
+<form name="myForm" action="Regular Expression.html" method="post">
+<div>
+NAME: <input type="text" name="fname"></br>
+AGE: <input type="number" name="age" ></br>
+GENDER: 
+<select name="gender">
+    <option value="">Select gender</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+</select>
+COUNTRY:
+<select name="country">
+    <option value="">Select </option>
+    <option value="ind">India</option>
+    <option value="usa">USA</option>
+    <option value="aus">Australia</option>
+</select>
+EDUCATION:
+<select name="edu">
+    <option value="">Select </option>
+    <option value="ten">10th</option>
+    <option value="twelve">12th</option>
+    <option value="college">B.E/B.Tech</option>
+</select>
+DEPARTMENT:
+<select name="dept">
+    <option value="">Select </option>
+    <option value="cse">Computer Science and Engineering</option>
+    <option value="it">Information technology</option>
+</select>
+RATE THIS PAGE(1-10):<input type="number" name="rate">
+DOB: <input type="date" name="dob"></br>
+E-MAIL: <input type="email" name="mail"></br>
+PHONE NO:<input type="tel" name="phno" placeholder="Indian phone numbers only"
+></br>
+PASSWORD: <input type="password" name="pwd"></br>
+Please accept the terms and conditions :<input type="checkbox" name="tnc"
+id="myCheck"></br>
+</div>
+<input type="submit" value="SUBMIT" onclick=" return validateForm()">
+<input type="reset" value="RESET" >
+</form>
+</body>
+</html>
