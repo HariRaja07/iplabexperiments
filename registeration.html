@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horizon-Register</title>
+    <script>
+      function validateForm() {
+        var x = document.forms["myForm"]["fname"].value;
+        var y = document.forms["myForm"]["age"].value;
+        var z = document.forms["myForm"]["phno"].value;
+        var p = document.forms["myForm"]["pwd"].value;
+        var e = document.forms["myForm"]["mail"].value;
+        var d = document.forms["myForm"]["dob"].value;
+        var g = document.forms["myForm"]["gender"].value;
+        var cp = document.forms["myForm"]["cpwd"].value;
+        var s = document.forms["myForm"]["state"].value;
+        var ci = document.forms["myForm"]["city"].value;
+        var pi = document.forms["myForm"]["pin"].value;
+        var ano = document.forms["myForm"]["adno"].value;
+        var pan = document.forms["myForm"]["pno"].value;
+        var c = document.getElementById("myCheck");
+        if (
+          x == "" &&
+          y == "" &&
+          z == "" &&
+          p == "" &&
+          e == "" &&
+          d == "" &&
+          g == "" &&
+          cp == "" &&
+          s == "" &&
+          ci == "" &&
+          pi == "" &&
+          ano == "" &&
+          pan == ""
+        ) {
+          alert("Enter all Details");
+          return false;
+        } else if (x == "") {
+          alert("name not entered");
+          return false;
+        } else if (y == "") {
+          alert("age not entered");
+          return false;
+        } else if (z == "") {
+          alert("phone number must filled out");
+          return false;
+        } else if (p == "") {
+          alert("password is empty");
+          return false;
+        }else if(cp != p) {
+            alert("please enter correct password");
+            return false;
+        } else if (g == "") {
+          alert("Enter gender");
+          return false;
+        } else if (d == "") {
+          alert("Enter Date");
+          return false;
+        } else if (e == "") {
+          alert("Enter mail Id");
+          return false;
+        } else if (s == "") {
+          alert("Please enter your State");
+          return false;
+        } else if (ci == "") {
+          alert("Please enter your City");
+          return false;
+        } else if (ano == "") {
+          alert("Aadhar number not entered");
+          return false;
+        } else if (pan == "") {
+          alert("Pan number not entered");
+          return false;
+        } else if( pi =="") {
+            alert("Pin Code not filled")
+            return false;
+        }
+        if (c.checked == false) {
+          alert("tnc not checked");
+          return false;
+        }
+      }
+    </script>
+    <style>
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="number"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="tel"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="password"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="email"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="date"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        width: 50%;
+        background-color: #f0902a;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #f58a18;
+      }
+      input[type="reset"] {
+        width: 50%;
+        background-color: #f0902a;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="reset"]:hover {
+        background-color: #f78408;
+      }
+      div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      table{
+  border: 1px;
+  border-radius: 10px;
+  background-color:#E9A178;
+}
+th{
+  border: 1px;
+  border-radius: 10px;
+}
+td {
+  border: 1px;
+  border-radius: 10px;
+}
+    </style>
+  </head>
+  <body>
+    <h1 style="font-family:'Times New Roman', Times, serif ; color: #7A3E65; background-color: #FFBFA9; border-radius: 5px;" align="center">Welcome to Horizon Bank</h1>
+    <form name="myForm" action="login.html" method="get">
+        <div style="color: #183A1D; background-color: #F6E1C3;">
+        <h2 align="center" style="color: #A84448;">Registeration Form</h2></br>
+        <table align="center">
+          <tr>
+            <td>NAME:</td>
+            <td><input type="text" name="fname"></td>
+          </tr>
+          <tr>
+            <td>AGE:</td>
+            <td><input type="number" name="age"></td>
+          </tr>
+          <tr>
+            <td>GENDER:</td>
+            <td><select name="gender">
+              <option value="">Select gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+          </select></td>
+          </tr>
+          <tr>
+            <td>STATE:</td>
+            <td><input type="text" name="state"></td>
+          </tr>
+          <tr>
+            <td>CITY:</td>
+            <td><input type="text" name="city"></td>
+          </tr>
+          <tr>
+            <td>PIN CODE:</td>
+            <td><input type="text" name="pin"></td>
+          </tr>
+          <tr>
+            <td>AADHAR NUMBER:</td>
+            <td><input type="text" name="adno"></td>
+          </tr>
+          <tr>
+            <td>PAN NUMBER:</td>
+            <td><input type="text" name="pno"></td>
+          </tr>
+          <tr>
+            <td>DOB:</td>
+            <td><input type="date" name="dob"></td>
+          </tr>
+          <tr>
+            <td>E-MAIL:</td>
+            <td><input type="email" name="mail"></td>
+          </tr>
+          <tr>
+            <td>PHONE NO:</td>
+            <td><input type="tel" name="phno" placeholder="Indian phone numbers only"></td>
+          </tr>
+          <tr>
+            <td>PASSWORD:</td>
+            <td><input type="password" name="pwd"></td>
+          </tr>
+          <tr>
+            <td>CONFIRM PASSWORD:</td>
+            <td><input type="password" name="cpwd"></td>
+          </tr>
+          <tr>
+            <td>Accept the terms and conditions:</td>
+            <td><input type="checkbox" name="tnc" id="myCheck"></td>
+          </tr>
+          <tr>
+            <td><input type="submit" value="REGISTER" onclick=" return validateForm()"></td>
+            <td><input type="reset" value="RESET" ></td>
+          </tr>
+          <tr>
+            <td>Already registered?</td>
+            <td><a href="login.html">Press Here</a></td>
+          </tr>
+        
+        </table>
+        </div>
+        </form>
+  </body>
+</html>
