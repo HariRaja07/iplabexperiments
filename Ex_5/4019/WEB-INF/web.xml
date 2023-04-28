@@ -1,0 +1,39 @@
+<web-app>
+<servlet>
+<servlet-name>check1</servlet-name>
+<servlet-class>j1</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>check1</servlet-name>
+<url-pattern>/link1</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>check21</servlet-name>
+<servlet-class>j21</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>check21</servlet-name>
+<url-pattern>/link21</url-pattern>
+</servlet-mapping>
+
+<servlet>  
+    <servlet-name>check22</servlet-name>  
+    <servlet-class>j22</servlet-class>  
+  </servlet>  
+  
+  <servlet-mapping>  
+    <servlet-name>check22</servlet-name>  
+    <url-pattern>/link22</url-pattern>  
+  </servlet-mapping> 
+
+  <servlet>  
+    <servlet-name>check3</servlet-name>  
+    <servlet-class>j3</servlet-class>  
+  </servlet>  
+  
+  <servlet-mapping>  
+    <servlet-name>check3</servlet-name>  
+    <url-pattern>/link3</url-pattern>  
+  </servlet-mapping> 
+</web-app>
