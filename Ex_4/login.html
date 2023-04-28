@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon-Login</title>
+    <script>
+        function validateForm(){
+            var x = document.forms["loginForm"]["uname"].value;
+            var p = document.forms["loginForm"]["pwd"].value;
+            if (
+          x == "" &&
+          p == ""
+        ) {
+          alert("Enter Username and Password");
+          return false;
+        } else if (x == "") {
+          alert("Username not entered");
+          return false;
+        } else if (p == "") {
+          alert("Password not entered");
+          return false;
+        }
+        }
+    </script>
+    <style>
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="password"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        width: 100%;
+        background-color: #4E31AA;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #2F58CD;
+      }
+      input[type="reset"] {
+        width: 100%;
+        background-color: #4E31AA;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="reset"]:hover {
+        background-color: #2F58CD;
+      }
+      div {
+        border-radius: 5px;
+        background: #FFA3FD;
+        padding: 20px;
+        height: 100%;
+      }
+      table{
+  border: 1px;
+  border-radius: 10px;
+  background-color:#E384FF;
+  width: 40%;
+}
+td {
+  border: 1px;
+  border-radius: 10px;
+  width: 50%;
+}
+    </style>
+</head>
+<body style="background-color: #FFA3FD;">
+    <form name="loginForm" action="transaction.html" method="get">
+        <div>
+            <h1 align="center" style="color: #191825;">Welcome to Horizon Bank</h1></br>
+            <h2 align="center" style="color: #3A1078;">Login Page</h2>
+            <table align="center">
+                <tr>
+                    <td>USERNAME:</td>
+                    <td><input type="text" name="uname"></td>
+                </tr>
+                <tr>
+                    <td>PASSWORD:</td>
+                    <td><input type="password" name="pwd"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="LOGIN" onclick=" return validateForm()"></td>
+                    <td><input type="reset" value="RESET"></td>
+                </tr>
+                <tr>
+                    <td>Didn't registered?</td>
+                    <td><a href="registeration.html">Press here</a></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

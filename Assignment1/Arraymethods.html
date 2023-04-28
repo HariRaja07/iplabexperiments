@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>array methods</title>
+    <style type="text/css">
+        em {
+            font-weight: bold;
+            color: rgb(40, 5, 238);
+            font-style: italic;
+        }
+
+        h1 {
+            font-weight: bolder;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        p {
+            color: rgb(3, 59, 3);
+            font-family: sans-serif;
+            border: 2px solid #537FE7;
+            padding: 30px;
+        }
+
+        body {
+            background-color: #E9F8F9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CONCAT:</h1>
+    <p>The concat() method concatenates (joins) two or more arrays:</p>
+
+    <p id="demo1"></p>
+
+    <script>
+const arr1 = ["Cecilie", "Lone"];
+const arr2 = ["Emil", "Tobias", "Linus"];
+const children = arr1.concat(arr2);
+document.getElementById("demo1").innerHTML = children;
+    </script>
+
+    <h1>SOME:</h1>
+    <p>The Array.some() method checks if any of the elements in an array pass a test (provided as a function).</p>
+
+    <p id="demo2"></p>
+
+    <script>
+const ages = [3, 10, 18, 20];
+document.getElementById("demo2").innerHTML = ages.some(checkAdult);
+function checkAdult(age) {
+            return age > 18;
+}
+    </script>
+
+    <h1>REVERSE:</h1>
+    <p>The Array.reverse() method reverses the order of the elements in an array.</p>
+
+    <p id="demo3"></p>
+
+    <script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo3").innerHTML = fruits.reverse();
+    </script>
+
+    <h1>SORT:</h1>
+    <p>The Array.sort() method sorts the elements of an array.</p>
+
+    <p id="demo4"></p>
+
+    <script>
+document.getElementById("demo4").innerHTML = fruits.sort();
+    </script>
+
+    <h1>MAP:</h1>
+    <p>The Array.map() method creates a new array from the results of calling a function for every element.</p>
+
+    <p id="demo5"></p>
+
+    <script>
+const numbers = [4, 9, 16, 25];
+document.getElementById("demo5").innerHTML = numbers.map(Math.sqrt);
+    </script>
+
+
+</body>
+</html>
