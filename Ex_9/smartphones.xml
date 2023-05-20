@@ -1,0 +1,27 @@
+<smartphones>
+  <smartphone>
+    <brand>Apple</brand>
+    <model>iPhone 12</model>
+    <os>iOS</os>
+  </smartphone>
+  <smartphone>
+    <brand>Samsung</brand>
+    <model>Galaxy S21</model>
+    <os>Android</os>
+  </smartphone>
+  <smartphone>
+    <brand>Google</brand>
+    <model>Pixel 6</model>
+    <os>Android</os>
+  </smartphone>
+  <smartphone>
+    <brand>OnePlus</brand>
+    <model>9 Pro</model>
+    <os>Android</os>
+  </smartphone>
+  <smartphone>
+    <brand>Xiaomi</brand>
+    <model>Redmi Note 10</model>
+    <os>MIUI</os>
+  </smartphone>
+</smartphones>
